@@ -583,8 +583,42 @@ button.mixitup-control-active{
     }
 }
 // -------------------------------------------------------end uFollowes -------------------------------------------------------------------------------------------
-
+// -------------------------------------------------------start statistics -------------------------------------------------------------------------------------------
+.statistics{
+    background-color: #212225;
+    padding: 95px 0;
+    .brif{
+        color: #feb71d;
+    }
+    .cloud{
+        color: #58c9e9;
+    }
+    .smile{
+        color: #77de51;
+    }
+    .people{
+        color: #ff6a6d;
+    }
+}
+.statistics__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.statistics__icon{
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+.statistics__number{
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+.statistics__info{
+    font-size: 18px;
+    color: #fff;
+}
+// -------------------------------------------------------end statistics -------------------------------------------------------------------------------------------
 
 @import 'media';
 
-  
