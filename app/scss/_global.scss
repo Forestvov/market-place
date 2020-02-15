@@ -60,3 +60,14 @@ a{
 .slick-prev{
     right:95px;
 }
+.top__title-default{
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    padding: 0 30px;
+    margin-bottom: 50px;
+}

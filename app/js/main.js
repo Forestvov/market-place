@@ -13,4 +13,6 @@ $(function(){
         prevArrow: '<button type="button" class="arrw-box slick-prev lnr lnr-chevron-left"></button>',
         nextArrow: '<button type="button" class="arrw-box slick-next lnr lnr-chevron-right"></button>'
     });
+
+    var mixer = mixitup('.newrelease__inner');
 });
