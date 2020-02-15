@@ -23,6 +23,7 @@ gulp.task('script', function(){
     return gulp.src([
         'node_modules/slick-carousel/slick/slick.js',
         'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
+        'node_modules/rateyo/src/jquery.rateyo.js',
     ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())
@@ -33,8 +34,8 @@ gulp.task('style', function(){
     return gulp.src([
         'node_modules/normalize.css/normalize.css',
         'node_modules/slick-carousel/slick/slick.css',
-        // 'node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css',
         'node_modules/jquery-form-styler/dist/jquery.formstyler.css',
+        'node_modules/rateyo/src/jquery.rateyo.css',
     ])
     .pipe(concat('libs.min.css'))
     .pipe(cssmin())

@@ -237,6 +237,7 @@
     &__inner{
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
     }
     &__img{
         width: 113px;
@@ -266,5 +267,140 @@
   
 // -------------------------------------------------------end plus -------------------------------------------------------------------------------------------
 
+// -------------------------------------------------------start products -------------------------------------------------------------------------------------------
+.products{
+    background-color: $bgGray;
+    padding: 120px 0;
+}
+.products__top{
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    padding: 0 30px;
+    margin-bottom: 50px;
+}
+.products__boxBtn{
+    height: 45px;
+    width: 110px;
+    background-color: #7347c1;
+    border-radius: 25px;
+}
+.products__inner{
+    &-item{
+        display: flex !important;
+    }
+    &-title{
+        font-weight: 500;
+        font-size: 24px;
+        color: #000;
+        margin-bottom: 20px;
+    }
+}
+.products__inner-left{
+    display: block;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 555px;
+    min-height: 450px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.products__inner-right{
+    background-color: #fff;
+    max-width: 615px;
+    padding: 50px 60px 25px 50px;
+    box-shadow: 0px 2px 30px 0px rgba(147, 155, 168, 0.1);
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.products__inner-author{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 33px;
+    .avatar{
+        height: 30px;
+        margin-right: 10px;
+        width: 30px;
+        border-radius: 50%;
+    }
+    span{
+        margin-bottom: 39px;
+    }
+    img{
+        display: inline-block;
+    }
+    .nickname{
+        font-size: 15px;
+        color: #000;
+        margin-right: 20px;
+    }
+    .category{
+        margin-left: 10px;
+        padding-right: 10px;
+    }
+}
+.products__inner-info{
+    font-size: 16px;
+    color: $gray;
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+.products__inner-boxTag{
+    .taglink{
+        display: inline-block;
+    }
+    .tag{
+        font-size: 15px;
+        color: #868c96;
+        height: 28px;
+        padding: 0 15px;
+        background-color: #f1f3f6;
+        text-align: center;
+        border-radius: 25px;
+        align-items: center;
+        display: flex;
+        & + .tag{
+            margin-left: 7px;
+        }
+    }
+}
+.products__inner-content{
+    padding-bottom: 45px;
+    border-bottom: 1px solid #ececec;
+}
+.products__inner-buttom{
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.price{
+    padding: 9px 20px;
+    color: #fff;
+    background-color: $blue;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.liks{
+    font-size: 15px;
+    color: #7347c1;
+    margin-left: 15px;
+    span{
+        color: $gray;
+    }
+}
+.purchases{
+    font-size: 15px;
+    color: $blue;
+    margin-left: 20px;
+}
+
+// -------------------------------------------------------end products -------------------------------------------------------------------------------------------
 
 @import 'media'
