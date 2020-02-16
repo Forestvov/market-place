@@ -183,3 +183,26 @@ a{
         font-weight: 400;
     }
 }
+
+.breadcrumbs__list{
+    li{
+     position: relative;
+     display: inline-block;
+     & + li{
+        padding-left: 24px;
+        &::before{
+            position: absolute;
+            content: '/';
+            left: 8px;
+            color: #fff;
+           }
+       }
+   }
+   a{
+       color: #fff;
+   }
+   span{
+       color: #bfcad7;
+   }
+}
+  

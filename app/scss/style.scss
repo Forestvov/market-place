@@ -1142,6 +1142,153 @@ button.mixitup-control-active{
 }
 // -------------------------------------------------------end footer -------------------------------------------------------------------------------------------
 
+// -------------------------------------------------------START CATEGORY PAGE -------------------------------------------------------------------------------------------
+
+// -------------------------------------------------------start header -------------------------------------------------------------------------------------------
+.profi__blog-info{
+    margin-right: 50px;
+    .lnr{
+        color: #7e8fa1;
+        font-size: 20px;
+        transition: all .5s ease;
+        &:hover{
+            color: #ffc000;
+        }
+    }
+    .lnr-alarm{
+        span{
+            background-color: #ff6a6c;
+        }
+    }
+    .lnr-envelope{
+        span{
+            background-color: #62d03b;
+        }
+    }
+    .lnr-cart{
+        span{
+             background-color: #0674ec;  
+        }
+    }
+    a{
+        position: relative;
+        &  + a{
+            margin-left: 35px;
+        }
+        span{
+            height: 22px;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            justify-content: center;
+            top: -16px;
+            color: #fff;
+            right: -10px;
+            min-width: 22px;
+            border-radius: 50%;
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+}
+.profil__blog-menu{
+    max-width: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    .profil__avatar{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-position: center;
+        background-repeat: no-repeat;   
+        background-size: cover;
+        float: left;
+        margin-right: 20px;
+    }
+    .profil__nickName,
+    .profil__balance{
+        display: block;
+    }
+    .profil__box{
+        .profil__nickName{
+            margin-bottom: 8px;
+            font-size: 16px;
+            color: #000;
+            font-weight: 500;
+            max-width: 180px;
+            transition: all .5s ease;
+            &:hover{
+                color: $blue;
+            }
+        }
+        .profil__balance{
+            color: $blue;
+            font-size: 15px;
+            transition: all .5s ease;
+            &:hover{
+                color: #000;
+            }
+        }
+    }
+}
+// -------------------------------------------------------end header -------------------------------------------------------------------------------------------
+// -------------------------------------------------------start banner -------------------------------------------------------------------------------------------
+.banner{
+    padding: 90px 0 30px;
+    background-image: linear-gradient(270deg, rgb(13,62,242) 0%, rgb(45,47,199) 46%, rgb(76,31,156) 100%);
+}
+.banner__inner{
+    text-align: center;
+}
+.banner-title{
+    color: #fff;
+    font-weight: 400;
+    font-size: 26px;
+    margin-bottom: 30px;
+    span{
+        font-weight: 500;
+    }
+}
+.banner__forma{
+    margin-bottom: 35px;
+    
+    form{
+    position: relative;
+    width: 560px;
+    display: inline-block;
+    }
+    input{
+       height: 55px;
+
+       width: 100%;
+       border-radius: 30px;
+       padding-left: 30px;
+       padding-right: 130px;
+       border: none;
+       &::placeholder{
+        color: #747b86;
+       }
+    }
+    button{
+        border: none;
+        height: 55px;
+        cursor: pointer;
+        color: #fff;
+        position: absolute;
+        top: 0;
+        right: -3px;
+        border-radius: 30px;
+        width: 110px;
+        background-color: $blue;
+        transition: all .5s ease;
+        &:hover{
+            background-color: #3930b4;
+        }
+    }
+}
+// -------------------------------------------------------end banner -------------------------------------------------------------------------------------------
+// -------------------------------------------------------END CATEGORY PAGE -------------------------------------------------------------------------------------------
 
 @import 'media';
 
