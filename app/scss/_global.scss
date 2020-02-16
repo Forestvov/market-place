@@ -66,6 +66,10 @@ a{
     font-size: 14px;
     color: #fff;
     outline: none;
+    transition: all .5s ease;
+    &:hover{
+        color: $gray;
+    }
 }
 .slick-prev{
     right:95px;
