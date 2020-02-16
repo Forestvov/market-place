@@ -113,7 +113,48 @@ a{
              color: $blue; 
         }
     }
-   
+}
+.whyChoose{
+    .lnr-license{
+        color: $blue;
+    }
+    .lnr-magic-wand{
+        color: #7f4ec2;
+    }
+    .lnr-lock{
+        color: #77de51;
+    }
+    .lnr-chart-bars{
+        color: #feb71d;
+    }
+    .lnr-leaf{
+        color: #58c9e9;
+    }
+    .lnr-phone{
+        color: #ff6a6d;
+    }
 }
 
-  
+.title-centr {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 700px;
+    margin-bottom: 55px;
+    &__top {
+        font-size: 36px;
+        color: #000;
+        font-weight: 400;
+        margin-bottom: 30px;
+        span{
+            color: $blue;
+            font-weight: 400;
+        }
+    }
+    &__bottom {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        color: $gray;
+        font-weight: 400;
+    }
+}

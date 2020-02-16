@@ -619,6 +619,55 @@ button.mixitup-control-active{
     color: #fff;
 }
 // -------------------------------------------------------end statistics -------------------------------------------------------------------------------------------
+// -------------------------------------------------------start whyChoose -------------------------------------------------------------------------------------------
+.whyChoose{
+    padding: 120px 0;
+    background-color: #fff;
+}
+.whyChoose__inner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.whyChoose__item{
+    position: relative;
+    display: block;
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    max-width: 360px;
+    border-radius: 4px;
+    text-align: center;
+    padding: 50px 35px 30px;
+    min-height: 375px;
+    margin-bottom: 30px;
+    .num{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-weight: 30;
+        color: rgba(#5c87f8, 0.2);
+        font-size: 30px;
+        font-weight: 40;
+    }
+    .whyChoose__icon{
+        font-size: 60px;
+        margin-bottom: 53px;
+    }
+    .whyChoose__title{
+        font-size: 24px;
+        color: #000;
+        font-weight: 500;
+        margin-bottom: 35px;
+    }
+    .whyChoose__text{
+        color: $gray;
+        line-height: 30px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+}
+
+// -------------------------------------------------------end whyChoose -------------------------------------------------------------------------------------------
 
 @import 'media';
 
