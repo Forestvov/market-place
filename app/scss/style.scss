@@ -858,10 +858,43 @@ button.mixitup-control-active{
     }
 }
 // -------------------------------------------------------end latestnews -------------------------------------------------------------------------------------------
+// -------------------------------------------------------start moneyback -------------------------------------------------------------------------------------------
+.moneyback__inner{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: '';
+        width: 1px;
+        height: 100%;
+        background-color: #eff1f5;
+        top: 0;
+        left: 50%;
+    }
+    &-images{
+        height: 120px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-bottom: 30px;
+        background-position: center;
+    }
+    &-text{
+        font-weight: 400;
+        font-size: 24px;
+        color: #000;
+        span{
+            color: $blue;
+        }
+    }
+}
+// -------------------------------------------------------end moneyback -------------------------------------------------------------------------------------------
 
 
 
-  
 
 
 @import 'media';
