@@ -555,11 +555,8 @@ button.mixitup-control-active{
     text-align: center;
     margin-top: 60px;
     a{
-        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
         color: #fff;
         background-color: $blue;
-        border-radius: 30px;
-        padding: 20px 30px;    
     }
 }
 
@@ -673,12 +670,7 @@ button.mixitup-control-active{
     justify-content: space-between;
     text-align: center;
     a{
-        color: transparent;
-        font-size: 16px;
         background-color: #fff;
-        padding: 20px 40px;
-        border-radius: 30px;
-        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
     }
 }
 .sellBay__icon{
@@ -716,11 +708,71 @@ button.mixitup-control-active{
         color: #7347c1;
     }
 }
-
 // -------------------------------------------------------end sellBay -------------------------------------------------------------------------------------------
+// -------------------------------------------------------start clinetfacebook -------------------------------------------------------------------------------------------
+.clinetfacebook{
+    padding: 120px 0;
+}
+.clinetfacebook__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.clinetfacebook__item{
+    max-width: 555px;
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    border-left: 1px solid $blue;
+    padding: 50px 40px;
+    margin-bottom: 75px;
+    &-author{
+        position: relative;
+        margin-bottom: 30px;
+        .face-avatar{
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            float: left;
+            margin-right: 20px;
+        }
+        .name{
+            font-size: 20px;
+            color: #000;
+            margin-bottom: 15px;
+            margin-top: 15px;
+        }
+        .prof{
+            color: $gray;
+            font-size: 16px;
+        }
+        .chat{
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 60px;
+            color: #e8e8e8;
+        }
+    }
+    .clinetfacebook__message{
+        font-weight: 400;
+        color: $gray;
+        line-height: 30px;
+        font-size: 16px;
+    }
+}
+.clinetfacebook__btn{
+    text-align: center;
+    a{
+        background-color: $blue;
+        color: #fff;
+    }
+}
+
+// -------------------------------------------------------end clinetfacebook -------------------------------------------------------------------------------------------
+
 
   
-
 
 
 @import 'media';
