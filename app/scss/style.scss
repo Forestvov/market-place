@@ -920,7 +920,173 @@ button.mixitup-control-active{
 }
 // -------------------------------------------------------end join -------------------------------------------------------------------------------------------
 
-
+// -------------------------------------------------------start footer -------------------------------------------------------------------------------------------
+.footer{
+    background-color: #262b30;
+}
+.footer-top{
+    padding: 115px 0;
+}
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+    .first{
+        max-width: 270px;
+    }
+    .last{
+        max-width: 365px;
+    }
+}
+.footer__col{
+    li{
+        display: block;
+        margin-bottom: 20px;
+    }
+    a{
+        color: #ababab;
+        font-size: 15px;
+        font-weight: 400;
+        transition: all .5s ease;
+        &:hover{
+            color: #fff;
+        }
+    }
+    &-title{
+        margin-bottom: 30px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    span{
+        font-size: 16px;
+        margin-right: 12px;
+        color: #fff;
+    }
+}
+.footer__text{
+    color: #ababab;
+    margin-bottom: 30px;
+    line-height: 28px;
+}
+.footer__contact{
+    color: #ababab;
+    position: relative;
+    padding-left: 30px;
+    span{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+.footer__contact-link{
+    margin-bottom: 20px;
+}
+.footer__col-form{
+    margin-bottom: 50px;
+    form{
+        position: relative;
+        height: 50px;
+    }
+    input{
+        height: 50px;
+        background-color: #fff;
+        border: none;
+        border-radius: 30px;
+        padding-left: 30px;
+        padding-right: 100px;
+        outline: none;
+        max-width: 340px;
+        &::placeholder{
+            color: #ababab;
+            font-size: 15px;
+        }
+    }
+    button{
+        cursor: pointer;
+        position: absolute;
+        background-color: $blue;
+        border: none;
+        border-radius: 30px;
+        height: 50px;
+        outline: none;
+        padding: 0 25px;
+        color: #fff;
+        right: 10px;
+        transition: all .5s ease;
+        &:hover{
+            background-color: #7347c1;
+        }
+    }
+}
+.footer__list-socail{
+    li{
+        display: inline-block;
+        & + li{
+            margin-left: 15px;  
+        }
+    }
+    a{
+        width: 42px;
+        height: 42px;
+        color: #fff;
+        font-family: 'icomoon';
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .facebook {
+        background-color: #395799;
+        &::before{
+            content: "\f09a";
+        }
+    }
+    .twitter {
+        background-color: #19b2f5;
+        &::before{
+            content: "\f099";
+        }
+    }
+    .gmail {
+        background-color: #f05b44;
+        &::before{
+            content: "\f1a0";
+        }
+    }
+    .pinterest {
+        background-color: #9c0c1c;
+        &::before{
+            content: "\f0d2";
+        }
+    }
+    .linkedIn {
+        background-color: #0da6be;
+        &::before{
+            content: "\f0e1";
+        }
+    }
+    .dribbble {
+        background-color: #ea4c89;
+        &::before{
+            content: "\f17d";
+        }
+    }
+}
+.footer-bottom{
+    height: 95px;
+    background-color: #192027;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: #999999;
+    a{
+        color: #fff;
+        margin-left: 5px;
+    }
+}
+// -------------------------------------------------------end footer -------------------------------------------------------------------------------------------
 
 
 @import 'media';
