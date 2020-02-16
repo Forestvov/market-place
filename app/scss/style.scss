@@ -666,8 +666,62 @@ button.mixitup-control-active{
     }
     
 }
-
 // -------------------------------------------------------end whyChoose -------------------------------------------------------------------------------------------
+// -------------------------------------------------------start sellBay -------------------------------------------------------------------------------------------
+.sellBay__inner{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    a{
+        color: transparent;
+        font-size: 16px;
+        background-color: #fff;
+        padding: 20px 40px;
+        border-radius: 30px;
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+    }
+}
+.sellBay__icon{
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 50px;
+}
+.sellBay__title{
+    font-size: 36px;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.sellBay__text{
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 75px;
+}
+.sellBay__left,
+.sellBay__right{
+    min-height: 540px;
+    padding: 100px 190px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.sellBay__left{
+    a{
+        color: #0674ec;
+    }
+}
+.sellBay__right{
+    a{
+        color: #7347c1;
+    }
+}
+
+// -------------------------------------------------------end sellBay -------------------------------------------------------------------------------------------
+
+  
+
+
 
 @import 'media';
 
