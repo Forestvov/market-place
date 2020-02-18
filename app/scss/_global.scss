@@ -6,6 +6,10 @@ html{
 *::after{
     box-sizing: inherit;
 }
+html,
+body{
+    height: 100%;
+}
 body{
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
@@ -205,4 +209,9 @@ a{
        color: #bfcad7;
    }
 }
-  
+.off{
+    display: none !important;
+}
+.on{
+    display: block;
+}

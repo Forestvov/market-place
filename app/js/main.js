@@ -21,6 +21,47 @@ $(function(){
         slidesToShow: 3,
         slidesToScroll: 3
     });
+
+    $('.profil__nickName').on('click',function(){
+        $('.drop__profile').toggleClass('active');
+    });
+
+    $('.message__btn').on('click',function(){
+        $(this).toggleClass('active');
+        $('.message__drop').toggleClass('active');
+    });
     
+    $('.notification__btn').on('click',function(){
+        $(this).toggleClass('active');
+        $('.notification__drop').toggleClass('active');
+    });
+   
+    $('.bascet__btn').on('click',function(){
+        $(this).toggleClass('active');
+        $('.basket__drop').toggleClass('active');
+    });
+
+    $('.page__list').on('click',function(){
+        $(this).toggleClass('active');
+        $('.pages__drop').toggleClass('active');
+    });
+
+    $('.products__all').on('click',function(){
+        $(this).toggleClass('active');
+        $('.all__products').toggleClass('active');
+    });
+
+    $('.home__list').on('click',function(){
+        $(this).toggleClass('active');
+        $('.list__home').toggleClass('active');
+    });
+
+    $('.wp__list').on('click',function(){
+        $(this).toggleClass('active');
+        $('.drop__wp').toggleClass('active');
+    });
+    
+
     var mixer = mixitup('.newrelease__inner');
 });
+

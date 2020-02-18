@@ -50,6 +50,7 @@
 .header__menu-inner {
    display: flex;
    justify-content: space-between;
+   position: relative;
 }
 .forma{
     display: flex;
@@ -201,7 +202,6 @@
     }
 }
 .jq-selectbox{
-
     .jq-selectbox__select{
         height: 55px;
         background-color: #fff;
@@ -249,7 +249,525 @@
         transform: rotate(180deg);
     }
 }
+.all__products{
+    z-index: 2;
+}
+.header__box-link{
+    margin-left: 85px;
+    font-size: 15px;
+    color: #676767;
+    a + a{
+        margin-left: 25px;
+    }
+}
+.page__list,
+.products__all,
+.home__list,
+.wp__list{
+    transition: all .5s ease;
+    cursor: pointer;
+    &:hover{
+        color: $blue;
+    }
+    &.active{
+        color: $blue;
+    }
+}
+.pages__drop{
+    position: absolute;
+    top: 80px;
+    background-color: #fff;
+    box-shadow: 0px 0px 0px 0px rgba(82, 85, 90, 0.2);
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 0px solid $blue;
+    height: 0;
+    overflow: hidden;
+    padding: 0 30px;
+    transition: all .5s;
+    &.active{
+        border-top: 1px solid $blue;
+        padding: 35px 30px;
+        overflow: visible;
+        box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+        z-index: 4;
+        height: auto;
+    }
+    li{
+        display: block;
+    }
+    &-title{
+        font-weight: 700;
+        font-size: 16px;
+        color: #000;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #e8ebf0 ;
+    }
+    &-inner{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.pages__drop-col{
+    margin-top: 30px;
+    a{
+        color: #54667a;
+        font-size: 15px;
+        font-weight: 500;
+        transition: all .5s ease;
+        &:hover{
+            color: $blue;
+        }
+    }
+    li{
+        & + li{
+            margin-top: 30px;
+        }
+    }
 
+}
+.first__drop-col{
+    margin-right: 75px;
+}
+.menu__drop{
+    position: absolute;
+    left: 74px;
+    z-index: 2;
+    right: 0;
+    top: 80px;
+    box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+    border-top: 1px solid $blue;
+    width: 270px;
+    padding: 0 20px;
+    background-color: #fff;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: all .5s ease;
+    &.active{
+        padding: 20px;
+        height: auto;
+        visibility: visible;
+        overflow: visible;
+    }
+    li{
+        display: block;
+    }
+    a{
+        padding: 17px 10px;
+        width: 100%;
+        transition: all .5s ease;
+        color: #54667a;
+        font-size: 15px;
+        font-weight: 500;
+        &:hover{
+            background-color: $blue;
+            color: #fff;
+        }
+    }
+}
+.list__home{
+    left: 0;
+    z-index: 1;
+}
+.drop__wp{
+    left: 212px;
+    z-index: 3;
+}
+.festures__btn:hover{
+    color: $blue;
+}
+.profi__blog-info{
+    margin-right: 50px;
+    .lnr{
+        color: #7e8fa1;
+        font-size: 20px;
+        transition: all .5s ease;
+        &:hover{
+            color: #ffc000;
+        }
+    }
+    .lnr-alarm{
+        span{
+            background-color: #ff6a6c;
+        }
+    }
+    .lnr-envelope{
+        span{
+            background-color: #62d03b;
+        }
+    }
+    .lnr-cart{
+        span{
+             background-color: #0674ec;  
+        }
+    }
+    a{
+        position: relative;
+        &  + a{
+            margin-left: 35px;
+        }
+        span{
+            height: 22px;
+            width: 22px;
+            text-align: center;
+            line-height: 20px;
+            position: absolute;
+            top: -16px;
+            color: #fff;
+            right: -10px;
+            border-radius: 50%;
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+}
+.profil__blog{
+    position: relative;
+}
+.profil__blog-menu{
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    .profil__avatar{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-position: center;
+        background-repeat: no-repeat;   
+        background-size: cover;
+        float: left;
+        margin-right: 20px;
+    }
+    .profil__nickName,
+    .profil__balance{
+        display: block;
+    }
+    .profil__box{
+        position: relative;
+        .profil__nickName{
+            margin-bottom: 8px;
+            font-size: 16px;
+            color: #000;
+            font-weight: 500;
+            max-width: 180px;
+            transition: all .5s ease;
+            &:hover{
+                color: $blue;
+            }
+        }
+        .profil__balance{
+            color: $blue;
+            font-size: 15px;
+            transition: all .5s ease;
+            &:hover{
+                color: #000;
+            }
+        }
+    }
+}
+.profil__nickName,
+.message__btn,
+.notification__btn,
+.bascet__btn{
+    cursor: pointer;
+}
+.message__drop{
+    z-index: 6;
+}
+.message__btn,
+.notification__btn,
+.bascet__btn{
+    &.active{
+        color: #ffc000;
+    }
+}
+.drop__profile{
+    left: auto;
+    z-index: 8;
+    top: 74px;
+    a{
+        padding-left: 40px;
+        position: relative;
+        &::before{
+            left: 10px;
+            position: absolute;
+            font-size: 15px;
+        }
+    }
+}
+.mark{
+    &::after{
+        content: ''; 
+        position: absolute;
+        top: -18px;
+        right: 28px;
+        transition: all .5s ease;
+        border: 9px solid transparent;
+        border-bottom: 9px solid $blue;
+        box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+    }
+}
+.drop__blog{
+    opacity: 0;
+    visibility: hidden;
+    transition: .55s opacity, .55s visibility;
+    &.active{
+        opacity: 1;
+        visibility: visible;
+    }
+    border-top: 1px solid $blue;
+    position: absolute;
+    box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+    background-color: #fff;
+    width: 370px;
+    top: 60px;
+    right: 80px;
+    z-index: 1;
+    &-top{
+        padding: 0 25px;
+        height: 66px;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+        color: #000;
+        a{
+            font-weight: 15;
+            color: $blue;
+        }
+    }
+    &-img{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 14px;
+    }
+}
+.drop__blog-item{
+    position: relative;
+    display: flex;
+    padding: 0 25px;
+    height: 84px;
+    align-items: center;
+    border-top: 1px solid #e8ebf0;
+    font-size: 15px;
+}
+
+.drop__blog-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333333;
+    margin-bottom: 10px;
+    span{
+        margin-left: 15px;
+        color: $blue;
+    }
+    .replay{
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 4px;
+            background-image: url(../images/icons/reply.png);
+            width: 16px;
+            height: 12px;
+        }
+    }
+}
+.drop__blog-text {
+    color: $gray;
+}
+.drop__blog-date {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    color: #747a86;
+    &.new__notification{
+        color: $blue;
+    }
+}
+
+.notification__drop{
+    z-index: 5;
+    left: -26px;
+    &.mark::after{
+        right: auto;
+        left: 28px;
+    }
+    .drop__blog{
+        &-date{
+            position: static;
+        }
+        &-name{
+            margin-bottom: 5px;
+            a{
+                font-weight: 500;
+                color: #333333;
+            }
+            span{
+                margin-left: 3px;
+                font-size: 15px;
+                color: #747a86;
+            }
+        }
+        &-text{
+            margin-bottom: 5px;
+            a{
+                font-weight: 500;
+                color: $blue;
+            }
+        }
+    }
+    .drop__blog-content{
+        .ivent__icon{
+            position: absolute;
+            right: 25px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 33px;
+            height: 33px;
+            font-size: 15px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .lnr-heart{
+            background-color: #e6f1fd;
+            color: $blue;
+        }
+        .lnr-bubble{
+            background-color: #f1ecf9;
+            color: #7347c1;
+        }
+        .lnr-cart{
+            background-color: #fff0f0;
+            color: #ff6a6c;
+        }
+        .lnr-star{
+            background-color: #effaeb;
+            color: #62d03a;
+        }
+    }
+}
+.basket__drop{
+    width: 403px;
+    right: 17px;
+    z-index: 7;
+    left: auto;
+    .drop__blog-content{
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        position: relative;
+        .price{
+            position: absolute;
+            padding: 7px 12px;
+            background-color: #e6f1fd;
+            color: $blue;
+            font-weight: 500;
+            font-size: 15px;
+            bottom: 0;
+            right: -80px;
+        }
+        .drop__item-delete{
+            background-color: #f1ecf9;
+            width: 32px;
+            cursor: pointer;
+            height: 32px;
+            border-radius: 50%;
+            position: absolute;
+            right: -80px;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &::before{
+                font-size: 15px;
+                color: #818c98;
+            }
+        }
+    }
+    .drop__blog{
+        &-img{
+            width: 80px;
+            height: 70px;
+            border-radius: 0;
+        }
+        &-item{
+            height: auto;
+            padding: 25px;
+            border-top: none;
+            border-bottom: 1px solid #e8ebf0;
+        }
+        &-name{
+            max-width: 175px;
+            margin-bottom: 20px;
+            a{
+                font-weight: 500;
+                color: #000;
+                font-size: 16px;
+            }
+        }
+        &-category{
+            padding-left: 22px;
+            position: relative;
+            &::before{
+                position: absolute;
+                content: '';
+                background-image: url(../images/content/wp.png);
+                width: 16px;
+                height: 16px;
+                left: 0;
+            }
+        }
+        
+    }
+    .drop__total-price{
+        height: 70px;
+        display: flex;
+        align-items: center;
+        padding: 0 25px;
+        justify-content: flex-end;
+        color: #000;
+        font-size: 18px;
+        font-weight: 500;
+        span{
+            margin-left: 32px;
+        }
+    }
+    .dropb__box-btn{
+        display: flex;
+        height: 60px;
+        a{
+            width: 100%;
+            align-items: center;
+            display: flex;
+            color: #fff;
+            justify-content: center;
+            background-color: $blue;
+            transition: all .5s ease;
+            &:hover{
+                background: #0c64c5;
+            }
+        }
+        .btn__cart{
+            background: #7347c1;
+            min-width: 200px;
+            &:hover{
+                background-color: #653ab1;
+            }
+        }
+    }
+}
 // -------------------------------------------------------end header -------------------------------------------------------------------------------------------
 // -------------------------------------------------------start plus -------------------------------------------------------------------------------------------
 .plus{
@@ -1144,95 +1662,6 @@ button.mixitup-control-active{
 
 // -------------------------------------------------------START CATEGORY PAGE -------------------------------------------------------------------------------------------
 
-// -------------------------------------------------------start header -------------------------------------------------------------------------------------------
-.profi__blog-info{
-    margin-right: 50px;
-    .lnr{
-        color: #7e8fa1;
-        font-size: 20px;
-        transition: all .5s ease;
-        &:hover{
-            color: #ffc000;
-        }
-    }
-    .lnr-alarm{
-        span{
-            background-color: #ff6a6c;
-        }
-    }
-    .lnr-envelope{
-        span{
-            background-color: #62d03b;
-        }
-    }
-    .lnr-cart{
-        span{
-             background-color: #0674ec;  
-        }
-    }
-    a{
-        position: relative;
-        &  + a{
-            margin-left: 35px;
-        }
-        span{
-            height: 22px;
-            display: flex;
-            align-items: center;
-            position: absolute;
-            justify-content: center;
-            top: -16px;
-            color: #fff;
-            right: -10px;
-            min-width: 22px;
-            border-radius: 50%;
-            font-size: 14px;
-            font-weight: 500;
-        }
-    }
-}
-.profil__blog-menu{
-    max-width: 200px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    .profil__avatar{
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background-position: center;
-        background-repeat: no-repeat;   
-        background-size: cover;
-        float: left;
-        margin-right: 20px;
-    }
-    .profil__nickName,
-    .profil__balance{
-        display: block;
-    }
-    .profil__box{
-        .profil__nickName{
-            margin-bottom: 8px;
-            font-size: 16px;
-            color: #000;
-            font-weight: 500;
-            max-width: 180px;
-            transition: all .5s ease;
-            &:hover{
-                color: $blue;
-            }
-        }
-        .profil__balance{
-            color: $blue;
-            font-size: 15px;
-            transition: all .5s ease;
-            &:hover{
-                color: #000;
-            }
-        }
-    }
-}
-// -------------------------------------------------------end header -------------------------------------------------------------------------------------------
 // -------------------------------------------------------start banner -------------------------------------------------------------------------------------------
 .banner{
     padding: 90px 0 30px;
