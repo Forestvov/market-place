@@ -71,7 +71,7 @@ $(function(){
 		    && div.has(e.target).length === 0) {
             div.removeClass('active')
             $('.btn__list').removeClass('active')
-		}
+        }
 	});
 
     var mixer = mixitup('.newrelease__inner');
