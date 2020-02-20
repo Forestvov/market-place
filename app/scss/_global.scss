@@ -215,3 +215,11 @@ a{
 .on{
     display: block;
 }
+.burger__menu{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    color: #000;
+    display: none;
+    margin-top: 35px;
+}

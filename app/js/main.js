@@ -61,6 +61,18 @@ $(function(){
         $('.drop__wp').toggleClass('active');
     });
     
+    $('.burger__menu').on('click',function(){
+        $('.menu__list').toggleClass('active');
+    });
+    
+    $(document).mouseup(function (e){
+		var div = $(".header__menu-drop");
+		if (!div.is(e.target)
+		    && div.has(e.target).length === 0) {
+            div.removeClass('active')
+            $('.btn__list').removeClass('active')
+		}
+	});
 
     var mixer = mixitup('.newrelease__inner');
 });

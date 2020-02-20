@@ -51,12 +51,16 @@
    display: flex;
    justify-content: space-between;
    position: relative;
+   flex-wrap: wrap;
 }
 .forma{
     display: flex;
     align-items: center;
     max-width: 360px;
     position: relative;
+    form{
+        position: relative;
+    }
     input{
         height: 45px;
         border-radius: 25px;
@@ -77,7 +81,6 @@
         height: 45px;
         padding: 0 28px;
         border-radius: 25px;
-        top: 18px;
         right: 0;
         transition: all .5s ease;
         &:hover{
@@ -768,6 +771,7 @@
         }
     }
 }
+
 // -------------------------------------------------------end header -------------------------------------------------------------------------------------------
 // -------------------------------------------------------start plus -------------------------------------------------------------------------------------------
 .plus{
@@ -1502,6 +1506,7 @@ button.mixitup-control-active{
 .footer__inner{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     .first{
         max-width: 270px;
     }
