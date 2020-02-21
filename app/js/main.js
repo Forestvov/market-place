@@ -5,10 +5,11 @@ $(function(){
         readOnly: true,
       });
     $('.big__banner-dropDown').styler();
+    $('.filterbox__low-select').styler();
+    $('.filterbox__items-select').styler();
     $('.jq-selectbox__trigger-arrow').addClass('lnr lnr-chevron-down'); 
     $('.jq-selectbox').on('click', function(){
         $('.jq-selectbox__trigger-arrow').toggleClass('active');
- 
     }); 
 
     $('.products__inner').slick({
@@ -64,15 +65,44 @@ $(function(){
     $('.burger__menu').on('click',function(){
         $('.menu__list').toggleClass('active');
     });
-    
+
+    $('.filter-list').on('click',function(){
+        $(this).toggleClass('active');
+        $('.products__list').addClass('list');
+        $('.filter-block').removeClass('active');
+    });
+
+    $('.filter-block').on('click',function(){
+        $(this).toggleClass('active');
+        $('.products__list').removeClass('list');
+        $('.filter-list').removeClass('active');
+    });
+
     $(document).mouseup(function (e){
-		var div = $(".header__menu-drop");
+        let div = $(".header__menu-drop");
+        let select  = $('.jq-selectbox__dropdown');
 		if (!div.is(e.target)
 		    && div.has(e.target).length === 0) {
             div.removeClass('active')
             $('.btn__list').removeClass('active')
         }
-	});
+        if (!select.is(e.target)
+		    && select.has(e.target).length === 0) {
+            select.removeClass('active')
+            $('.jq-selectbox__trigger-arrow').removeClass('active')
+        }
+    });
+    
+    $(".products__adide-pricerange").ionRangeSlider({
+        type: "double",
+        hide_min_max: true, 
+        min: 0,
+        max: 400,
+        from: 30,
+        to: 300,
+        prefix: "$",
+        decorate_both: true,  
+    });
 
     var mixer = mixitup('.newrelease__inner');
 });
