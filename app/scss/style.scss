@@ -2240,6 +2240,111 @@ button.mixitup-control-active{
 }
 
 //end .age-404
+//start priceplan
+.priceplan{
+    margin-bottom: 120px;
+}
+.priceplan__inner{
+    display: flex;
+    justify-content: center;
+}
+.priceplan__inner-item {
+    max-width: 360px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    padding: 30px;
+    width: 100%;
+    & + &{
+        margin-left: 30px;
+    }
+}
+
+.plan-starter {
+    border-top: 3px solid #ff6a6c;
+    .btn__priceplan{
+        background-color: #ff6a6c;
+    }
+}
+.plan-business{
+    border-top: 3px solid $blue;
+    .btn__priceplan{
+        background-color: $blue;
+    }
+}
+.plan-agency{
+    border-top: 3px solid #feb71d;
+    .btn__priceplan{
+        background-color: #feb71d;
+    }
+} 
+.priceplan__top-title{
+    margin-top: 120px;
+}
+.btn__priceplan{
+    display: block;
+    color: #fff;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    text-align: center;
+}
+.priceplan__inner-title {
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #000;
+    border-bottom: 1px solid #e8ebf0;
+}
+.priceplan__inner-price {
+    position: relative;
+    font-size: 36px;
+    color: #000;
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+    sub{
+        font-size: 16px;
+        color: $text;
+        bottom: 0;
+        left: -13px;
+    }
+}
+.priceplan__inner-list {
+    .hint{
+        cursor: pointer;
+        font-size: 18px;
+    }
+    li{
+        position: relative;
+        padding-left: 24px;
+        font-size: 16px;
+        color: #000;
+        font-weight: 500;
+        span{
+            color: $text;
+        }
+        &::before{
+            position: absolute;
+            content: '';
+            width: 7px;
+            height: 7px;
+            background-color: #c5cad4;
+            border-radius: 50%;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        & + li{
+            margin-top: 20px;
+        }
+    }
+    margin-bottom: 40px;
+}
+//end priceplan
 
 
 @import 'media';

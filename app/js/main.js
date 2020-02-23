@@ -104,6 +104,13 @@ $(function(){
         decorate_both: true,  
     });
 
+
+    $('.hint').tooltipster({
+        animation: 'fade',
+        delay: 200,
+        trigger: 'hover'
+     });
+
     var mixer = mixitup('.newrelease__inner');
 });
 
